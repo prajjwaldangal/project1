@@ -2,7 +2,7 @@
 #include <linux/slab.h>
 #include <linux/kernel.h>
 #include <linux/types.h>
-#include <openssl/sha.h>
+#include <linux/limits.h>
 
 struct birthday {
 	char name[100];
@@ -58,7 +58,7 @@ int hash(HT * ht, char * name) {
 }
 
 int set_HT(HT * ht, entry * bday) { 
-	int ind = hash(bday->name);
+	int ind = hash(ht, bday->name);
 	
 }
 
