@@ -1,5 +1,6 @@
-
-.hashtable*
-.simple*
-
+*.mod*
+*.o
+*.ko
 d.c
+*.out
+*odule*
