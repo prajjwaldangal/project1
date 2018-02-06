@@ -1,2 +1,5 @@
-.*
+
+.hashtable*
+.simple*
+
 d.c
